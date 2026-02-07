@@ -30,9 +30,9 @@ export const CommonPopup = ({data}) => {
         <div className="popup-overlay" onClick={() => onClose()}>
             <div className="popup-container" onClick={(e) => e.stopPropagation()}>
                 <div className="popup-icon">
-                    {data?.type === "error" && <img src={ErrorIcon}/>}
-                    {data?.type === "success" && <img src={SuccessIcon}/>}
-                    {data?.type === "confirm" && <img src={ConfirmIcon}/>}
+                    {data?.type === "error" && <img src={ErrorIcon} alt="ảnh icon cảnh báo"/>}
+                    {data?.type === "success" && <img src={SuccessIcon} alt="ảnh icon thành công"/>}
+                    {data?.type === "confirm" && <img src={ConfirmIcon} alt="ảnh icon xác nhận"/>}
                 </div>
                 <div className="popup-title">{data?.title}</div>
                 <div className="popup-description">{data?.description}</div>
@@ -46,7 +46,7 @@ export const CommonPopup = ({data}) => {
                     </div>
                     : <div className="popup-button" onClick={() => onClose()}>{data?.labelBtn}</div>
                 }
-                <div className="popup-icon-close" onClick={() => onClose()}><img src={CloseIcon}/></div>
+                <div className="popup-icon-close" onClick={() => onClose()}><img src={CloseIcon} alt="ảnh icon đóng"/></div>
             </div>
         </div>
     )

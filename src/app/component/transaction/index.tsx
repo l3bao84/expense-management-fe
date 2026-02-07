@@ -28,7 +28,7 @@ export const Transaction = ({id, onClose, onExecute}) => {
         <div className="popup-overlay" onClick={onClose}>
             <div className="popup-container popup-update-category" onClick={(e) => e.stopPropagation()}>
                 Đóng tiền/Chi tiêu
-                <div className="popup-icon-close" onClick={onClose}><img src={CloseIcon}/></div>
+                <div className="popup-icon-close" onClick={onClose}><img src={CloseIcon} alt="ảnh icon đóng"/></div>
                 <div className="popup-update-container">
                     <div className="popup-update-input">
                         <input

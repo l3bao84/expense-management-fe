@@ -229,7 +229,7 @@ const Home = () => {
                                         </div>
                                         <div className="category-box-info">
                                             <div
-                                                className={"category-box-info-balance" + (cate?.status !== 0 ? " current-balance" : " expense-balance")}>{(cate?.status == 0 ? "- " : "") + cate?.balance.toLocaleString("vi-VN") + " đ"}</div>
+                                                className={"category-box-info-balance" + (cate?.status !== 0 ? " current-balance" : " expense-balance")}>{(cate?.status === 0 ? "- " : "") + cate?.balance.toLocaleString("vi-VN") + " đ"}</div>
                                             <div className="category-box-info-action" onClick={(e) => {
                                                 e.stopPropagation()
                                                 setUpdateCate(cate)
