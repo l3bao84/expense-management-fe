@@ -1,5 +1,5 @@
 import "./style.css"
-import React, {useRef, useState} from "react";
+import React, {useState} from "react";
 // @ts-ignore
 import CloseIcon from "../../assets/dấu x.png";
 
@@ -17,7 +17,7 @@ export const Transaction = ({id, onClose, onExecute}) => {
 
     const checkEnableButton = () => {
         if(amount === 0) return false
-        if(note == null || note === "") return false
+        if(note === null || note === "") return false
         return true
     }
 

@@ -33,7 +33,7 @@ export const ExpenseChart = ({category, onPopup}) => {
                 to: to
             }
             const data = await expenseApi.getTransaction(request);
-            if(data?.errorCode == 0) {
+            if(data?.errorCode === 0) {
                 setTransactions(data?.data)
                 let totalIncome = 0
                 data?.data?.map(cate => {

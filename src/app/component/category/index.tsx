@@ -39,9 +39,9 @@ export const Category = ({data, onClose, onUpdate, type}) => {
     };
 
     const checkEnableButton = () => {
-        if(name == null || name === "") return false
-        if(desc == null || desc === "") return false
-        if(icon == null || icon === "") return false
+        if(name === null || name === "") return false
+        if(desc === null || desc === "") return false
+        if(icon === null || icon === "") return false
         return true
     }
 
@@ -49,7 +49,7 @@ export const Category = ({data, onClose, onUpdate, type}) => {
         <div className="popup-overlay" onClick={onClose}>
             <div className="popup-container popup-update-category" onClick={(e) => e.stopPropagation()}>
                 {type === "update" ? "Thay đổi danh mục theo ý bạn" : "Thêm mới một danh mục"}
-                <div className="popup-icon-close" onClick={onClose}><img src={CloseIcon}/></div>
+                <div className="popup-icon-close" onClick={onClose}><img src={CloseIcon} alt="ảnh icon close"/></div>
                 <div className="popup-update-container">
                     <div className="popup-update-input">
                         <input
@@ -79,7 +79,7 @@ export const Category = ({data, onClose, onUpdate, type}) => {
                         onChange={onFileChange}
                     />
                     {icon ? <div className="popup-update-icon">
-                            <img src={icon}/>
+                            <img src={icon} alt="ảnh icon danh mục"/>
                             <i className="fa-solid fa-circle-xmark" onClick={() => setIcon(null)}></i>
                         </div> :
                         <div className="popup-button" onClick={() => openFilePicker()}>Chọn ảnh</div>

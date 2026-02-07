@@ -66,7 +66,7 @@ const Home = () => {
     const removeCategory = async (id) => {
         try {
             const data = await expenseApi.delCate(id);
-            if(data?.errorCode == 0) {
+            if(data?.errorCode === 0) {
                 setPopup({
                     title: "Thành công",
                     description: "Xóa danh mục thành công",
@@ -97,7 +97,7 @@ const Home = () => {
     const updateCategory = async (request) => {
         try {
             const data = await expenseApi.update(request);
-            if(data?.errorCode == 0) {
+            if(data?.errorCode === 0) {
                 setPopup({
                     title: "Thành công",
                     description: "Cập nhật danh mục thành công",
@@ -128,7 +128,7 @@ const Home = () => {
     const createCategory = async (request) => {
         try {
             const data = await expenseApi.create(request);
-            if(data?.errorCode == 0) {
+            if(data?.errorCode === 0) {
                 setPopup({
                     title: "Thành công",
                     description: "Tạo mới danh mục thành công",
