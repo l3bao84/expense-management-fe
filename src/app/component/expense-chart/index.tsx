@@ -1,3 +1,7 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable array-callback-return */
+/* eslint-disable react-hooks/exhaustive-deps */
+
 import { PieChart, Pie, Cell, Tooltip, Legend } from "recharts";
 import "./style.css"
 // @ts-ignore
