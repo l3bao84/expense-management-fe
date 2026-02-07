@@ -1,0 +1,65 @@
+.popup-update-category {
+    justify-content: unset;
+    align-items: unset;
+}
+.popup-update-container {
+    padding-top: 16px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.popup-update-input {
+    width: 100%;
+    position: relative;
+}
+.text-input-value {
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #EEeeee;
+    outline: none;
+    border-radius: 8px;
+    padding: 24px 8px 8px 8px;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    color: #282828;
+}
+.text-input-label {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #737373;
+
+    position: absolute;
+    top: 16px;
+    left: 8px;
+    transition: 0.1s ease;
+}
+.text-input-value:focus + .text-input-label {
+    font-size: 12px;
+    top: 8px;
+}
+.text-input-value:not(:placeholder-shown) + .text-input-label {
+    font-size: 12px;
+    top: 8px;
+}
+.popup-update-icon {
+    position: relative;
+}
+.popup-update-icon > img {
+    border-radius: 8px;
+    width: 100%;
+    border: 1px solid #EEeeee;
+}
+.popup-update-icon > i {
+    font-size: 18px;
+    position: absolute;
+    right: -10px;
+    top: -6px;
+}
+.disabled-button {
+    pointer-events: none;
+    background-color: #CDD5DF;
+    color: #9AA3B2;
+    border: 1px solid #CDD5DF;
+}

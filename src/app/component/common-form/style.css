@@ -1,0 +1,14 @@
+body {
+    min-height: 100vh;
+    background-image: url("../../assets/wall-paper.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Inter", sans-serif;
+}
+.common-form {
+    width: 100vw;
+    height: 100vh;
+    padding: 24px 16px;
+    box-sizing: border-box;
+}

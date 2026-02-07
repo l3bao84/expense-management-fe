@@ -1,0 +1,88 @@
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.popup-container {
+    background: #fff;
+    width: calc(100vw - 32px);
+    max-width: 100%;
+    margin: 0 16px;
+    border-radius: 20px;
+    overflow: hidden;
+    animation: popupFadeIn 0.2s ease;
+    padding: 32px 16px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+@keyframes popupFadeIn {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
+.popup-icon {
+    width: 80px;
+    height: 80px;
+}
+.popup-title {
+    padding-top: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    leading-trim: NONE;
+    line-height: 130%;
+    text-align: center;
+    color: #282828;
+}
+.popup-description {
+    padding-top: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 130%;
+    text-align: center;
+    color: #44494D;
+}
+.popup-button {
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 16px;
+    height: 40px;
+    width: 100%;
+    border: 1px solid #4B5565;
+    border-radius: 10px;
+}
+.popup-icon-close {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    right: 16px;
+    top: 15.5px;
+    position: absolute;
+}
+.popup-button-both {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: space-between;
+}
+.popup-button-both > .popup-button {
+    width: calc(100%/2 - 8px);
+}
+.confirm-button {
+    background-color: #202020;
+    border-color: #9AA3B2;
+    color: #FFFFFF;
+}
