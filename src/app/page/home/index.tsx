@@ -224,7 +224,7 @@ const Home = () => {
                                         setCategory(cate)
                                     }}>
                                         <div className="category-box-icon">
-                                            <img src={cate?.icon}/>
+                                            <img src={cate?.icon} alt="ảnh icon danh mục"/>
                                             <div className="category-box-name">{cate?.name}</div>
                                         </div>
                                         <div className="category-box-info">
